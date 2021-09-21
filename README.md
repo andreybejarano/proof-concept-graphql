@@ -14,7 +14,7 @@ Proof concept GraphQL node.js
 * [GraphiQL](#graphiql)
 
 ## Dependencies
-- Node.js 9.4.0 or higher
+- Node.js 14.17.6 or higher
 - apollo-server-express
 - express
 - graphql

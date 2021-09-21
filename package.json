@@ -20,6 +20,10 @@
       "--inspect=5820"
     ]
   },
+  "engines": {
+    "node": ">=14.17.6"
+  },
+  "engineStrict": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/andreybejarano/proof-concept-graphql.git"
