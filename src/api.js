@@ -11,9 +11,10 @@ const config = require('./config');
 // Instance of GraphQL
 const graphql = require('./core/graphql');
 
-graphql.applyMiddleware({ app });
-
-// Start server
-app.listen(config.port, () => {
-  console.log(`Go to http://localhost:${config.port}${graphql.graphqlPath} to run queries! "enviroment": ${config.env}`);
+graphql.start().then(() => {
+  graphql.applyMiddleware({ app });
+  // Start server
+  app.listen(config.port, () => {
+    console.log(`Go to http://localhost:${config.port}${graphql.graphqlPath} to run queries! "enviroment": ${config.env}`);
+  });
 });

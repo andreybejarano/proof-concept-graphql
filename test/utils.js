@@ -8,4 +8,4 @@ function mockClass(urlClass, method) {
   });
 }
 
-module.exports = {mockClass};
+module.exports = { mockClass };

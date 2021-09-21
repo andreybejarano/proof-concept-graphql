@@ -107,7 +107,7 @@ class Module {
   FilesContent(directoryUrl) {
     try {
       const files = fs.readdirSync(directoryUrl);
-      let filesContent = [];
+      const filesContent = [];
       for (const index in files) {
         filesContent[index] = {
           fileName: files[index],

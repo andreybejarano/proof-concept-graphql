@@ -3,12 +3,12 @@
 /**
  * Create Schema
  */
-const { makeExecutableSchema } = require('graphql-tools');
+const { mergeSchemas } = require('@graphql-tools/schema');
 
 const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
 
-const schema = makeExecutableSchema({
+const schema = mergeSchemas({
   typeDefs,
   resolvers
 });
